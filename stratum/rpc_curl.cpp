@@ -1,6 +1,4 @@
 #include "stratum.h"
-
-#ifdef HAVE_CURL
 #include <curl/curl.h>
 
 #ifndef WIN32
@@ -437,5 +435,3 @@ json_value *rpc_curl_call(YAAMP_RPC *rpc, char const *method, char const *params
 
 	return json;
 }
-
-#endif /* HAVE_CURL */
