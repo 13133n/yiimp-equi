@@ -6,8 +6,7 @@ extern "C" {
 #endif
 
 #include <stdint.h>
-  
-typedef crypto_generichash_blake2b_state eh_HashState;
+#include <sodium.h>
 
 void equi_hash(const char* input, char* output, uint32_t len);
 
