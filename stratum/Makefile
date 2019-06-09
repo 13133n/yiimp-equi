@@ -21,7 +21,7 @@ SOURCES=stratum.cpp db.cpp coind.cpp coind_aux.cpp coind_template.cpp coind_subm
 
 CFLAGS += -DHAVE_CURL
 SOURCES += rpc_curl.cpp
-LDCURL = $(shell /usr/bin/pkg-config --static --libs libcurl)
+LDCURL = $(shell /usr/bin/pkg-config --static --libs libcurl4-openssl-dev)
 LDFLAGS += $(LDCURL)
 
 OBJECTS=$(SOURCES:.cpp=.o)
@@ -63,4 +63,3 @@ install: clean all
 	strip -s stratum
 	cp stratum /usr/local/bin/
 	cp stratum ../bin/
-
