@@ -3,16 +3,14 @@
 #include <string.h>
 #include <stdio.h>
 
-#include <sha3/sph_cubehash.h>
-#include <sha3/sph_jh.h>
-#include <sha3/sph_echo.h>
-#include <sha3/sph_skein.h>
-
-#include "gost.h"
-
-#include "Lyra2.h"
+#include "../sha3/sph_cubehash.h"
+#include "../sha3/sph_jh.h"
+#include "../sha3/sph_echo.h"
+#include "../sha3/sph_skein.h"
 
 #include "common.h"
+#include "gost.h"
+#include "Lyra2.h"
 
 void phi2_hash(const char* input, char* output, uint32_t len)
 {
