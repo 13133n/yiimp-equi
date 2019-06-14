@@ -3,10 +3,10 @@
 #include <string.h>
 #include <stdio.h>
 
-#include <sha3/sph_skein.h>
-#include <sha3/sph_shavite.h>
-#include <sha3/sph_shabal.h>
-//#include <sha3/sph_streebog.h>
+#include "../sha3/sph_skein.h"
+#include "../sha3/sph_shavite.h"
+#include "../sha3/sph_shabal.h"
+//#include "../sha3/sph_streebog.h"
 
 #include "gost.h"
 
@@ -37,4 +37,3 @@ void veltor_hash(const char *input, char* output, uint32_t len)
 
 	memcpy(output, hash, 32);
 }
-
