@@ -15,7 +15,14 @@
 #include <stdbool.h>
 #include <assert.h>
 
-#include <sodium.h>
+#include "../libsodium/src/libsodium/include/sodium.h"
+
+// Note by 0xEAX:
+//
+// Before this line was added, the project couldn't find certain functions
+// described in `crypto_generichash.h`. This line, albeit trivial, worked
+// and got me along into the build process.
+#include "../libsoidum/src/libsodium/include/sodium/crypto_generichash.h"
 
 #include "endian.h"
 
