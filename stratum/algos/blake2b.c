@@ -6,8 +6,8 @@
 #include <string.h>
 #include <stdint.h>
 
-#include <sha3/blake2b.h>
-#include <sha3/sph_types.h>
+#include "../sha3/blake2b.h"
+#include "../sha3/sph_types.h"
 
 void blake2b_hash(const char* input, char* output, uint32_t len)
 {
@@ -20,4 +20,3 @@ void blake2b_hash(const char* input, char* output, uint32_t len)
 
 	memcpy(output, hash, 32);
 }
-
