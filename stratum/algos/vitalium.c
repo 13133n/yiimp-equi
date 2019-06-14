@@ -1,17 +1,18 @@
 #include "vitalium.h"
+
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
 #include <stdio.h>
 
-#include <sha3/sph_skein.h>
-#include <sha3/sph_cubehash.h>
-#include <sha3/sph_fugue.h>
-#include <sha3/sph_echo.h>
-#include <sha3/sph_shavite.h>
-#include <sha3/sph_luffa.h>
-#include "gost.h"
+#include "../sha3/sph_skein.h"
+#include "../sha3/sph_cubehash.h"
+#include "../sha3/sph_fugue.h"
+#include "../sha3/sph_echo.h"
+#include "../sha3/sph_shavite.h"
+#include "../sha3/sph_luffa.h"
 
+#include "gost.h"
 #include "common.h"
 
 void vitalium_hash(const char* input, char* output, uint32_t len)
