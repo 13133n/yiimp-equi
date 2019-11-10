@@ -6,7 +6,8 @@ extern "C" {
 #endif
 
 #include <stdint.h>
-#include <sodium.h>
+#include "/home/pool/libsodium/src/libsodium/include/sodium.h"
+#include "/home/pool/libsodium/src/libsodium/include/sodium/crypto_generichash.h"
 
 void equi_hash(const char* input, char* output, uint32_t len);
 
