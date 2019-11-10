@@ -1,5 +1,5 @@
 #include "stratum.h"
-#include "curl/include/curl/curl.h"
+#include "/usr/include/x86_64-linux-gnu/curl/curl.h"
 
 #ifndef WIN32
 #include <errno.h>
